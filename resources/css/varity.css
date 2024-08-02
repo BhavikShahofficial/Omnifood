@@ -12,6 +12,19 @@
     outline: none;
 }
 
+::-webkit-scrollbar-thumb{
+    background-color: #817824;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
 html{
      font-size: 62.5%; /* because 16px = 1rem but now its 10px. */
 }

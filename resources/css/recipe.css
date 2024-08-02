@@ -9,6 +9,22 @@
     font-weight: 400;
 }
 
+::-webkit-scrollbar-thumb{
+    background: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Rounded corners */
+
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #cf6d17; /* Scrollbar track background */
+    border-radius: 10px; /* Rounded corners */
+}
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;

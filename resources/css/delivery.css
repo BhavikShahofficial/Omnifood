@@ -5,6 +5,20 @@
     padding: 0;
 }
 
+::-webkit-scrollbar-thumb{
+    background-color: #cf6d17;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track background */
+    border-radius: 10px; /* Rounded corners */
+}
+
 html,
 body{
     background-color: white;
@@ -624,6 +638,10 @@ footer p{
     .steps:last-of-type {
         margin-bottom: 40px;
     }
+
+    h2:after {
+        width: 300px;
+    }
 }
 @media only screen and (max-width: 480px) {
     section{
@@ -632,6 +650,27 @@ footer p{
 
     .contactForm {
         width: 100%;
+    }
+
+    .appScreen {
+        width: 60%;
+    }
+
+    .meals li {
+        float: inline-start;
+        width: 50%;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-con{
+        text-align: center;
+    }
+
+    .socialLinks {
+        float: none;
     }
 }
 
