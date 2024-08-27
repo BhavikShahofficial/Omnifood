@@ -526,6 +526,10 @@ footer p{
 .ps:hover{
     color:#feda75 ;
 }
+
+.main_box{
+    display: none;
+}
                                              /* footer section End */
 
                                              /* responsive  */
@@ -586,6 +590,107 @@ footer p{
         }
     }
 @media only screen and (max-width: 767px) {
+    .main_box{
+        position: relative;
+        display: contents;
+        z-index: 12000;
+    }
+
+    .sidebar_menu{
+        position: absolute;
+        height: 100vh;
+        width: 300px;
+        left: -350px;
+        background-color:#000;
+        transition: all 0.2s linear;
+        z-index: 12000;
+    }
+
+    .btn_one i{
+        position: absolute;
+        font-size: 1.1rem;
+        opacity: 1;
+        top : 5%;
+        left: 5%;
+    }
+
+
+    .btn_two i{
+        position: absolute;
+        font-size: 1.1rem;
+        top : 5%;
+        left: 275px;
+    }
+
+    .menu{
+        position: absolute;
+        top: 20%;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .menu ul li{
+        padding-bottom: 20px;
+        list-style: none;
+    }
+
+    .menu ul li:hover{
+        box-shadow: 0 0 4px rgba( 255,255,255,0.5);
+    }
+
+    .menu ul li i{
+        padding-right: 4px;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .menu ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
+    .social_media{
+        position: absolute;
+        bottom: 10%;
+        left: 30%;
+    }
+
+    .social_media a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .social_media a i{
+        opacity: 0.5;
+        font-size: 1rem;
+    }
+
+    .social_media i:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    .social_media ul a i{
+        padding-left: 5px;
+    }
+
+    #check:checked ~ .sidebar_menu{
+        left: 0;
+    }
+
+    #check:checked ~ .btn_one{
+        opacity: 0;
+    }
+
+    #check{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+
     body{
         font-size: 16px;
     }
@@ -607,6 +712,7 @@ footer p{
     .navList {
        font-size: 15px ;
     }
+
     .navList li{
        margin-left: 15px ;
     }
